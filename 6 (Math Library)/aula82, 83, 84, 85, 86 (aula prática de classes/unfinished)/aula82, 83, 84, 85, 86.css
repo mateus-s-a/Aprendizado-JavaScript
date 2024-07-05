@@ -1,0 +1,66 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONTROLES */
+.controles {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: stretch; /* align-items: stretch, faz com que os itens do container sejam esticados para ocupar todo o espaço disponível */
+    width: 100%;
+    background-color: #eee;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.controle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+/* TAGS */
+button {
+    cursor: pointer;
+    background-color: #888;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type="number"], #num_objetos {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+
+/* PALCO & BOLAS */
+.palco {
+    display: flex;
+    width: 100%;
+    min-height: 100vh; /* 'vh' é a unidade de medida do CSS que representa a altura do viewport, que por ventura, é o mesmo que a altura do dispositivo */
+    min-height: fill-available; /* min-height: fill-available, faz com que o elemento ocupe o máximo de espaço possível */
+    min-height: -webkit-fill-available;
+    background-color: #eee;
+    border: 2px solid black;
+    position: absolute;
+    overflow: hidden; /* overflow: hidden, faz com que o elemento não possa ser rolado */
+}
+.bola {
+    position: absolute;
+    border-radius: 100px;
+}
