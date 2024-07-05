@@ -1,0 +1,88 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+    user-select: none;
+}
+
+.calc,
+.div_nome,
+.div_display,
+.div_teclas,
+.tecla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    flex-direction: column;
+    background-color: #eee;
+    border: 3px solid gray;
+    width: 18svw;
+    border-radius: 5px;
+}
+
+
+
+
+/* TÍTULO */
+.div_nome {
+    width: 17svw;
+}
+
+
+
+/* DISPLAY */
+.div_display {
+    width: 17svw;
+}
+.display {
+    width: 17svw;
+    background-color: rgb(214, 214, 214);
+    text-align: right;
+    padding: 0.7svw;
+    font-family: monospace;
+    font-size: x-large  ;
+}
+
+
+
+/* TECLAS */
+.div_teclas {
+    width: 17svw;
+    flex-wrap: wrap;
+}
+
+.tecla {
+    background-color: #aaa;
+    border: 3px solid #888;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 4svw;
+    height: 8svh;
+    cursor: pointer;
+    margin: 0.1svw;
+    transition: filter 0.25s ease;
+
+    &:hover {
+        filter: brightness(80%);
+    }
+}
+.teclaOp {
+    background-color: #f44;
+    border-color: #800;
+}
+
+#tCopy {
+    background-color: #44f;
+    border-color: #008;
+
+    font-size: small;
+}
+
+#tSeparador {
+    pointer-events: auto;
+}
